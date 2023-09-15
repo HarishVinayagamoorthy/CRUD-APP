@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>CRUD-APP</title>
+</head>
+
+<body>
+    <h1>Shopping Cart</h1>
+    <table>
+      <tr>
+        <td>
+          <form autocomplete="off" onsubmit="onFormSubmit()">
+            <div>
+              <label for="productCode">Product Code</label>
+              <input
+                type="text"
+                name="productCode"
+                id="productCode"
+                placeholder="Enter your product id"
+              />
+            </div>
+            <div>
+              <label for="product">Product Name</label>
+              <input
+                type="text"
+                name="product"
+                id="product"
+                placeholder="Enter your product name"
+              />
+            </div>
+            <div>
+              <label for="qty">Product Quantity</label>
+              <input
+                type="number"
+                name="qty"
+                id="qty"
+                placeholder="Enter your product quantity"
+              />
+            </div>
+            <div>
+              <label for="perPrice"> Product Price</label>
+              <input
+                type="number"
+                name="perPrice"
+                id="perPrice"
+                placeholder="Enter your product price per quantity"
+              />
+            </div>
+            <div class="form_action--button">
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </div>
+          </form>
+          <td>
+            <table class="list" id="storeList">
+                <thead>
+                    <tr>
+                        <th>Product Code</th>
+                        <th>Product Name</th>
+                        <th>Product Quantity</th>
+                        <th>Product Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+          </td>
+        </td>
+      </tr>
+    </table>
+</body>
+<script src="/script.js"></script>
+
+</html>
